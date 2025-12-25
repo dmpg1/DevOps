@@ -4,7 +4,13 @@ pipeline {
     stages {
         stage('Hello') {
             steps {
-                echo 'Привет! Это мой первый пайплайн!'
+                echo 'Привет! Это мой второй пайплайн!'
+            }
+        }
+
+        stage('Connecting...') {
+            steps {
+                echo 'Подключаемся к git репозиторию'
             }
         }
         
